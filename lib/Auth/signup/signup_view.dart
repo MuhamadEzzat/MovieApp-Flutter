@@ -68,11 +68,11 @@ class _SignupPageState extends State<SignupPage> {
         ),
         backgroundColor: Colors.black87,
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(36.0, 48.0, 36.0, 0.0),
-            child: TextField(
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(36.0, 48.0, 36.0, 0.0),
+        child: Column(
+          children: [
+            TextField(
               controller: usernamecontroller,
               decoration: InputDecoration(
                   labelText:'Username',
@@ -80,10 +80,7 @@ class _SignupPageState extends State<SignupPage> {
                   errorText: _validateUsername ? null : 'Please enter Username greater than 5 & less than 10 characters.'
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(36.0, 8.0, 36.0, 0.0),
-            child: TextField(
+            TextField(
               controller: passcontroller,
               obscureText: true,
               decoration: InputDecoration(
@@ -92,10 +89,7 @@ class _SignupPageState extends State<SignupPage> {
                   errorText: _validatePass ?  null : 'Please enter password greater than 5 & less than 10 characters.'
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(36.0, 8.0, 36.0, 0.0),
-            child: TextField(
+            TextField(
               controller: confirmpasscontroller,
               obscureText: true,
               decoration: InputDecoration(
@@ -104,10 +98,7 @@ class _SignupPageState extends State<SignupPage> {
                   errorText: _validateConfirm ?  null : "Password doesn't match."
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(36.0, 8.0, 36.0, 0.0),
-            child: ElevatedButton(
+            ElevatedButton(
               onPressed: (()
               {
                 setState(() {
@@ -123,8 +114,8 @@ class _SignupPageState extends State<SignupPage> {
 
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
