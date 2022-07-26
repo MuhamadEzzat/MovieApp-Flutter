@@ -1,5 +1,5 @@
 import 'package:floor/floor.dart';
-import 'package:movies_app/movie.dart';
+import 'package:movies_app/data/pojo/movie.dart';
 
 @dao
 abstract class MovieDao {

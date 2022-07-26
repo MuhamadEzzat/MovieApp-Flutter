@@ -20,7 +20,7 @@ class Auth_Openning extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/bg.jpg"),
+              image: AssetImage("resources/assets/bg.jpg"),
               fit: BoxFit.fill
           ),
         ),
@@ -35,7 +35,7 @@ class Auth_Openning extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.white,
                 image:  DecorationImage(
-                    image: AssetImage('assets/login.jpg')
+                    image: AssetImage('resources/assets/login.jpg')
                 ),
               ),
               // child: Image(

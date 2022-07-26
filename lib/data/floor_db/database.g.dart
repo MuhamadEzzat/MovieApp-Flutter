@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'database.dart';
+part of '../pojo/database.dart';
 
 // **************************************************************************
 // FloorGenerator

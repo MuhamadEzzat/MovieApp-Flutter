@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Home/MoviesList/movies_list_model.dart';
+import 'package:movies_app/ui/Home/MoviesList/movies_list_model.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:movies_app/Home/spinner_widget.dart';
-import 'package:movies_app/database.dart';
-import 'package:movies_app/movie.dart';
-import 'package:movies_app/movie_dao.dart';
+import 'package:movies_app/utils/spinner_widget.dart';
+import 'package:movies_app/data/pojo/database.dart';
+import'package:movies_app/data/pojo/movie.dart';
+import 'package:movies_app/data/floor_db/movie_dao.dart';
 
 class MoviesList extends StatefulWidget {
   const MoviesList({Key? key}) : super(key: key);

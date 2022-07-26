@@ -1,7 +1,7 @@
 import 'package:http/http.dart';
 import 'dart:convert';
 import 'package:intl/intl.dart';
-import 'package:movies_app/movie.dart';
+import 'package:movies_app/data/pojo/movie.dart';
 
 
 class MoviesAPI {

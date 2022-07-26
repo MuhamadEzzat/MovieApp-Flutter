@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:movies_app/shared_widgets/alert_widget.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -115,25 +116,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-class InvalidLoginAlert extends StatelessWidget {
-  const InvalidLoginAlert({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: const Text('Alert'),
-      content: const Text('Invalid Username or Password'),
-
-      actions: [
-        ElevatedButton(
-            onPressed: (){
-              Navigator.pop(context);
-            },
-            child: const Text('OK')
-        ),
-      ],
-    );
-  }
-}
-

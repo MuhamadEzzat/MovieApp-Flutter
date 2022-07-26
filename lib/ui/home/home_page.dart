@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Home/MoviesList/movies_list_model.dart';
+import 'package:movies_app/ui/Home/MoviesList/movies_list_model.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/moviesbg.jpg'),
+                image: AssetImage('resources/assets/moviesbg.jpg'),
                 fit: BoxFit.fill
             )
         ),
